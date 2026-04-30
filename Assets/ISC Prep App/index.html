@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISC CPA Exam Prep | Master the Blueprints</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="logo">
+            <h1>ISC Prep 🚀</h1>
+        </div>
+        <div class="gamification-dashboard">
+            <div class="stat-badge" title="Daily Study Streak">
+                🔥 <span id="streak-count">0</span>
+            </div>
+            <div class="stat-badge" title="Experience Points">
+                ✨ <span id="xp-count">0</span> XP
+            </div>
+            <div class="stat-badge rank-badge" title="Current Rank">
+                🏆 <span id="user-rank">IT Associate</span>
+            </div>
+        </div>
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+    </header>
+
+    <main class="app-main">
+        
+        <section id="welcome-screen" class="screen active">
+            <div class="welcome-card">
+                <h2>Ready to master the ISC Exam?</h2>
+                <p>Test your knowledge on Data Management, Security, and SOC Engagements aligned with the 2026 AICPA Blueprints.</p>
+                <div class="welcome-stats">
+                    <p>Total Questions Answered: <strong id="lifetime-answered">0</strong></p>
+                </div>
+                <button id="start-btn" class="btn primary-btn">Start Practice Session ➡️</button>
+            </div>
+        </section>
+
+        <section id="quiz-screen" class="screen hidden">
+            
+            <div class="question-meta">
+                <span id="q-area" class="meta-tag area-tag">Area</span>
+                <span id="q-skill" class="meta-tag skill-tag">Skill Level</span>
+                <span id="q-ref" class="meta-tag ref-tag">Ref</span>
+            </div>
+
+            <div id="tbs-container" class="tbs-container hidden">
+                <h3>📎 Scenario Exhibits</h3>
+                <p id="tbs-scenario" class="scenario-text"></p>
+                <div id="exhibits-list" class="exhibits-list">
+                    </div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">Loading question...</h2>
+            </div>
+
+            <div id="options-container" class="options-container">
+                </div>
+
+            <div id="feedback-area" class="feedback-area hidden">
+                <div class="feedback-header">
+                    <h3 id="feedback-title">Correct! ✅</h3>
+                </div>
+                <p id="feedback-explanation" class="feedback-explanation"></p>
+                
+                <div id="feedback-rationale" class="rationale-box">
+                    </div>
+
+                <div id="feedback-protip" class="protip-box">
+                    <strong>💡 Pro Tip:</strong> <span id="protip-text"></span>
+                </div>
+
+                <button id="next-btn" class="btn next-btn">Next Question</button>
+            </div>
+        </section>
+
+        <section id="results-screen" class="screen hidden">
+            <div class="results-card">
+                <h2>Session Complete! 🎊</h2>
+                <div class="score-display">
+                    <span id="final-score" class="score-number">0/0</span>
+                    <span class="score-text">Correct</span>
+                </div>
+                <div class="results-summary">
+                    <p id="xp-earned">You earned <strong>+0 XP</strong> this session!</p>
+                </div>
+                <button id="restart-btn" class="btn primary-btn">Start New Session 🔄</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="app-footer">
+        <p>Built for CPA ISC Preparation | <a href="#" id="portfolio-link">View Portfolio</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

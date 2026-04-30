@@ -1,0 +1,88 @@
+[
+  {
+    "id": "ISC-001",
+    "type": "MCQ",
+    "area": "Area II: Security, Confidentiality, and Privacy",
+    "topic": "Access Control Models",
+    "skillLevel": "Application",
+    "question": "An organization wants to implement an access control model where permissions are strictly based on the user's function within the company. Which model should the CPA recommend?",
+    "options": [
+      { "id": "A", "text": "Discretionary Access Control (DAC)" },
+      { "id": "B", "text": "Mandatory Access Control (MAC)" },
+      { "id": "C", "text": "Role-Based Access Control (RBAC)" },
+      { "id": "D", "text": "Attribute-Based Access Control (ABAC)" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "RBAC aligns access directly with job responsibilities, simplifying onboarding and offboarding.",
+    "proTip": "Think of RBAC as 'Job Title' access. If you get promoted, your role changes, and so do your permissions automatically! 🚀",
+    "rationale": {
+      "A": "Incorrect. DAC relies on the data owner's discretion, which doesn't scale well for corporate role enforcement. ❌",
+      "B": "Incorrect. MAC is highly rigid and relies on security clearances (e.g., government 'Top Secret' data). ❌",
+      "C": "Correct. RBAC assigns permissions to specific roles, making it the most efficient for organizational alignment. ✅",
+      "D": "Incorrect. ABAC uses complex environmental attributes like time, location, and device type, which exceeds the requirements here. ❌"
+    },
+    "blueprintRef": "ISC.II.B.1"
+  },
+  {
+    "id": "ISC-002",
+    "type": "MCQ",
+    "area": "Area I: Information Systems and Data Management",
+    "topic": "Database Architecture",
+    "skillLevel": "Remembering/Understanding",
+    "question": "In a relational database, what is the primary purpose of a 'Foreign Key'?",
+    "options": [
+      { "id": "A", "text": "To encrypt data at rest within the table." },
+      { "id": "B", "text": "To uniquely identify each record in its own table." },
+      { "id": "C", "text": "To establish a link between data in two different tables." },
+      { "id": "D", "text": "To prevent unauthorized users from accessing the schema." }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Foreign keys enforce referential integrity between tables in a relational database.",
+    "proTip": "A Foreign Key is just a Primary Key working remotely in another table! 🔗",
+    "rationale": {
+      "A": "Incorrect. Encryption is handled by cryptographic algorithms, not database structural keys. ❌",
+      "B": "Incorrect. Uniquely identifying a record is the specific job of the Primary Key. ❌",
+      "C": "Correct. A foreign key references the primary key of another table, creating the 'relational' link. ✅",
+      "D": "Incorrect. Access control and schema security are handled by DBMS user permissions. ❌"
+    },
+    "blueprintRef": "ISC.I.A.2"
+  },
+  {
+    "id": "ISC-003",
+    "type": "MCQ",
+    "area": "Area III: SOC Engagements",
+    "topic": "Trust Services Criteria",
+    "skillLevel": "Remembering/Understanding",
+    "question": "Which of the following is the ONLY mandatory Trust Services Category (TSC) in a SOC 2 engagement?",
+    "options": [
+      { "id": "A", "text": "Availability" },
+      { "id": "B", "text": "Security (Common Criteria)" },
+      { "id": "C", "text": "Processing Integrity" },
+      { "id": "D", "text": "Confidentiality" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Security is the baseline criteria upon which all other Trust Services Criteria are built.",
+    "proTip": "Security is non-negotiable in SOC 2. The other four categories are selected based on the business's specific services. 🛡️",
+    "rationale": {
+      "A": "Incorrect. Availability is an optional criteria often chosen for cloud hosting providers. ❌",
+      "B": "Correct. Security (also known as the Common Criteria) must be included in every single SOC 2 report. ✅",
+      "C": "Incorrect. Processing Integrity is optional, usually added for systems handling financial or transactional processing. ❌",
+      "D": "Incorrect. Confidentiality is optional, usually added if protecting trade secrets or sensitive B2B data. ❌"
+    },
+    "blueprintRef": "ISC.III.A.1"
+  },
+  {
+    "id": "ISC-004",
+    "type": "MCQ",
+    "area": "Area II: Security, Confidentiality, and Privacy",
+    "topic": "Incident Response",
+    "skillLevel": "Application",
+    "question": "During a cyber incident, a server is found to be infected with ransomware. The IT team immediately disconnects it from the network but leaves it powered on. Which phase of the Incident Response lifecycle are they performing?",
+    "options": [
+      { "id": "A", "text": "Preparation" },
+      { "id": "B", "text": "Identification" },
+      { "id": "C", "text": "Containment" },
+      { "id": "D", "text": "Eradication" }
+    ],
+    "correctAnswer": "C",
+    "explanation":

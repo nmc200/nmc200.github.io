@@ -1,82 +1,57 @@
-:root {
-    --samba-yellow: #FFDF00;
-    --samba-green: #009B3A;
-    --samba-blue: #002776;
-    --glass: rgba(255, 255, 255, 0.9);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-}
-
 body {
     margin: 0;
-    padding: 20px;
+    padding: 0;
     font-family: 'Inter', sans-serif;
-    /* Samba Gradient Background */
-    background: radial-gradient(circle at top left, var(--samba-yellow), var(--samba-green));
-    background-attachment: fixed;
+    /* Samba Background: Brazil Flag Colors */
+    background: linear-gradient(135deg, #FFDF00 0%, #009B3A 100%); 
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--samba-blue);
+    overflow: hidden;
 }
 
 #game-container {
-    background: var(--glass);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 35px;
     border-radius: 20px;
-    border: 3px solid var(--samba-blue);
-    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
     width: 90%;
-    max-width: 500px;
+    max-width: 450px;
     text-align: center;
-    box-shadow: var(--glass-shadow);
+    border-bottom: 10px solid #002776; /* Brazil Blue Accent */
 }
 
-h1 {
-    color: var(--samba-green);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 0px var(--samba-yellow);
-}
+h1 { color: #009B3A; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+
+#question-text { font-size: 1.2rem; font-weight: 700; color: #002776; margin-bottom: 20px; }
 
 .btn {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 10px;
-    background: var(--samba-blue);
+    background: #002776;
     color: white;
+    border: none;
+    padding: 12px;
+    margin: 6px 0;
+    width: 100%;
+    border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.2s, background 0.3s;
+    transition: 0.2s;
 }
 
-.btn:hover {
-    background: #003fa3;
-    transform: scale(1.02);
-}
+.btn:hover { background: #001b52; transform: translateY(-2px); }
 
-.btn:active {
-    transform: scale(0.98);
-}
+.correct { background: #009B3A !important; }
+.wrong { background: #d90429 !important; }
 
-#question-text {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-/* Specific styling for the 'Correct' state */
-.correct {
-    background: var(--samba-green) !important;
-}
-
-/* Specific styling for the 'Wrong' state */
-.wrong {
-    background: #d90429 !important;
+#next-btn {
+    margin-top: 15px;
+    background: #FFDF00;
+    color: #002776;
+    border: 2px solid #002776;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 800;
+    cursor: pointer;
 }

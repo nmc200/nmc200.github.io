@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Which country has won the most FIFA World Cup titles?",
+    "answers": [
+      {"text": "Brazil", "correct": true},
+      {"text": "Germany", "correct": false},
+      {"text": "Italy", "correct": false},
+      {"text": "Argentina", "correct": false}
+    ]
+  },
+  {
+    "question": "Who is the all-time leading goalscorer in World Cup history?",
+    "answers": [
+      {"text": "Miroslav Klose", "correct": true},
+      {"text": "Pelé", "correct": false},
+      {"text": "Ronaldo", "correct": false},
+      {"text": "Just Fontaine", "correct": false}
+    ]
+  },
+  {
+    "question": "Which player won the Golden Ball at the 2022 World Cup?",
+    "answers": [
+      {"text": "Lionel Messi", "correct": true},
+      {"text": "Kylian Mbappé", "correct": false},
+      {"text": "Luka Modrić", "correct": false},
+      {"text": "Antoine Griezmann", "correct": false}
+    ]
+  },
+  {
+    "question": "Which nation hosted the first-ever FIFA World Cup in 1930?",
+    "answers": [
+      {"text": "Uruguay", "correct": true},
+      {"text": "Italy", "correct": false},
+      {"text": "Brazil", "correct": false},
+      {"text": "France", "correct": false}
+    ]
+  },
+  {
+    "question": "Who scored the famous 'Hand of God' goal in 1986?",
+    "answers": [
+      {"text": "Diego Maradona", "correct": true},
+      {"text": "Zico", "correct": false},
+      {"text": "Michel Platini", "correct": false},
+      {"text": "Gary Lineker", "correct": false}
+    ]
+  },
+  {
+    "question": "Which goalkeeper has the most clean sheets in World Cup history?",
+    "answers": [
+      {"text": "Fabien Barthez & Peter Shilton", "correct": true},
+      {"text": "Lev Yashin", "correct": false},
+      {"text": "Gianluigi Buffon", "correct": false},
+      {"text": "Iker Casillas", "correct": false}
+    ]
+  },
+  {
+    "question": "In what year did the FIFA World Cup first use a Red Card?",
+    "answers": [
+      {"text": "1970", "correct": true},
+      {"text": "1966", "correct": false},
+      {"text": "1974", "correct": false},
+      {"text": "1958", "correct": false}
+    ]
+  },
+  {
+    "question": "Which country is the only one to have played in every single World Cup?",
+    "answers": [
+      {"text": "Brazil", "correct": true},
+      {"text": "Germany", "correct": false},
+      {"text": "Italy", "correct": false},
+      {"text": "Mexico", "correct": false}
+    ]
+  },
+  {
+    "question": "Who won the Best Young Player award at the 2018 World Cup?",
+    "answers": [
+      {"text": "Kylian Mbappé", "correct": true},
+      {"text": "Marcus Rashford", "correct": false},
+      {"text": "Gabriel Jesus", "correct": false},
+      {"text": "Ousmane Dembélé", "correct": false}
+    ]
+  },
+  {
+    "question": "Which African nation was the first to reach a World Cup Semi-Final?",
+    "answers": [
+      {"text": "Morocco", "correct": true},
+      {"text": "Cameroon", "correct": false},
+      {"text": "Senegal", "correct": false},
+      {"text": "Ghana", "correct": false}
+    ]
+  }
+]

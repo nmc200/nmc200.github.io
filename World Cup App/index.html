@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samba Trivia: Brazil 2014 Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <div class="stats-bar">
+                <div class="streak-box">
+                    <span id="streak-icon">🔥</span>
+                    <span id="streak-count">0</span>
+                </div>
+                <div class="score-box">
+                    Score: <span id="current-score">0</span>
+                </div>
+            </div>
+
+            <div class="progress-wrapper">
+                <div class="progress-bar-bg">
+                    <div id="progress-fill"></div>
+                </div>
+                <span id="ball-icon">⚽</span>
+            </div>
+        </header>
+
+        <main id="quiz-card" class="card">
+            <div id="question-header">
+                <span id="difficulty-badge" class="badge">Easy</span>
+                <h2 id="question-text">Loading your first challenge...</h2>
+            </div>
+
+            <div id="answer-section">
+                </div>
+
+            <div id="feedback-area" class="hidden">
+                <p id="feedback-msg"></p>
+                <p id="fact-text"></p>
+                <button id="next-btn">Next Kick-off</button>
+            </div>
+        </main>
+
+        <section id="results-screen" class="hidden card">
+            <h1>Fim de Jogo!</h1>
+            <p>Your Final Score: <span id="final-score">0</span></p>
+            <p>Best Streak: <span id="best-streak">0</span></p>
+            <button onclick="location.reload()">Play Again</button>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

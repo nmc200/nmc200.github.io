@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "type": "multiple-choice",
+    "difficulty": "Easy",
+    "question": "Which country won the 2014 FIFA World Cup title in Brazil?",
+    "options": ["Argentina", "Brazil", "Germany", "Netherlands"],
+    "correctAnswer": "Germany",
+    "fact": "Germany won their 4th title after defeating Argentina 1-0 in the final."
+  },
+  {
+    "id": 2,
+    "type": "true-false",
+    "difficulty": "Easy",
+    "question": "The 2014 World Cup final was held at the Maracanã Stadium in Rio de Janeiro.",
+    "correctAnswer": true,
+    "fact": "The Maracanã is one of only two stadiums to host two different World Cup finals (1950 and 2014)."
+  },
+  {
+    "id": 3,
+    "type": "multiple-choice",
+    "difficulty": "Medium",
+    "question": "Who won the Golden Boot as the top scorer of the 2014 World Cup?",
+    "options": ["Lionel Messi", "James Rodríguez", "Thomas Müller", "Neymar Jr"],
+    "correctAnswer": "James Rodríguez",
+    "fact": "Colombia's James Rodríguez scored 6 goals, including the 'Goal of the Tournament' against Uruguay."
+  },
+  {
+    "id": 4,
+    "type": "multiple-choice",
+    "difficulty": "Hard",
+    "question": "Who holds the record for most World Cup goals in history (achieved in 2014)?",
+    "options": ["Pelé", "Ronaldo Nazário", "Miroslav Klose", "Gerd Müller"],
+    "correctAnswer": "Miroslav Klose",
+    "fact": "Klose scored his 16th goal during the 7-1 semi-final against Brazil, surpassing Ronaldo."
+  },
+  {
+    "id": 5,
+    "type": "true-false",
+    "difficulty": "Easy",
+    "question": "Brazil lost the 2014 semi-final to Germany by a score of 7-1.",
+    "correctAnswer": true,
+    "fact": "Known as the 'Mineirazo', it remains Brazil's largest-ever World Cup defeat."
+  },
+  {
+    "id": 6,
+    "type": "matching",
+    "difficulty": "Medium",
+    "question": "Match the 2014 World Cup star to their national team:",
+    "pairs": [
+      {"item": "Arjen Robben", "match": "Netherlands"},
+      {"item": "Luis Suárez", "match": "Uruguay"},
+      {"item": "Tim Howard", "match": "USA"},
+      {"item": "Alexis Sánchez", "match": "Chile"}
+    ],
+    "fact": "Tim Howard set a record in 2014 for most saves in a single World Cup match (15 vs Belgium)."
+  },
+  {
+    "id": 7,
+    "type": "multiple-choice",
+    "difficulty": "Medium",
+    "question": "Which country made its World Cup debut in the 2014 edition?",
+    "options": ["Iceland", "Bosnia and Herzegovina", "Slovakia", "Montenegro"],
+    "correctAnswer": "Bosnia and Herzegovina",
+    "fact": "They were the only nation making their first appearance that year."
+  },
+  {
+    "id": 8,
+    "type": "true-false",
+    "difficulty": "Medium",
+    "question": "Costa Rica reached the quarter-finals of the 2014 World Cup for the first time.",
+    "correctAnswer": true,
+    "fact": "Costa Rica topped a group featuring three former champions: England, Italy, and Uruguay."
+  },
+  {
+    "id": 9,
+    "type": "multiple-choice",
+    "difficulty": "Easy",
+    "question": "What was the name of the official 2014 mascot (an armadillo)?",
+    "options": ["Zakumi", "Fuleco", "Footix", "Zabivaka"],
+    "correctAnswer": "Fuleco",
+    "fact": "The name Fuleco is a portmanteau of the Portuguese words for Football (Futebol) and Ecology (Ecologia)."
+  },
+  {
+    "id": 10,
+    "type": "matching",
+    "difficulty": "Hard",
+    "question": "Match the Winner to the year they won their FIRST title:",
+    "pairs": [
+      {"item": "England", "match": "1966"},
+      {"item": "France", "match": "1998"},
+      {"item": "Spain", "match": "2010"},
+      {"item": "Argentina", "match": "1978"}
+    ],
+    "fact": "Only 8 countries have ever won the World Cup."
+  },
+  {
+    "id": 11,
+    "type": "multiple-choice",
+    "difficulty": "Medium",
+    "question": "Which team was the only one to remain undefeated in the 2010 World Cup?",
+    "options": ["Spain", "Netherlands", "New Zealand", "Germany"],
+    "correctAnswer": "New Zealand",
+    "fact": "Even though they were eliminated in the group stage, they drew all three matches."
+  },
+  {
+    "id": 12,
+    "type": "true-false",
+    "difficulty": "Easy",
+    "question": "The FIFA World Cup takes place every four years.",
+    "correctAnswer": true,
+    "fact": "It has been held every 4 years since 1930, except during WWII (1942 and 1946)."
+  },
+  {
+    "id": 13,
+    "type": "multiple-choice",
+    "difficulty": "Hard",
+    "question": "Who was the first player to score a hat-trick in a World Cup Final?",
+    "options": ["Pelé", "Geoff Hurst", "Kylian Mbappé", "Zinedine Zidane"],
+    "correctAnswer": "Geoff Hurst",
+    "fact": "He scored three for England against West Germany in 1966."
+  },
+  {
+    "id": 14,
+    "type": "matching",
+    "difficulty": "Medium",
+    "question": "Match the iconic stadium to its city:",
+    "pairs": [
+      {"item": "Maracanã", "match": "Rio de Janeiro"},
+      {"item": "Azteca", "match": "Mexico City"},
+      {"item": "Wembley", "match": "London"},
+      {"item": "Lusail", "match": "Qatar"}
+    ],
+    "fact": "The Azteca and Maracanã are the only stadiums to host two finals."
+  },
+  {
+    "id": 15,
+    "type": "multiple-choice",
+    "difficulty": "Easy",
+    "question": "How many teams participated in the 2014 FIFA World Cup?",
+    "options": ["24", "32", "16", "48"],
+    "correctAnswer": "32",
+    "fact": "2014 was the penultimate 32-team tournament before the expansion to 48."
+  },
+  {
+    "id": 16,
+    "type": "true-false",
+    "difficulty": "Medium",
+    "question": "The 'Jabulani' was the official match ball of the 2014 World Cup.",
+    "correctAnswer": false,
+    "fact": "The 2014 ball was the 'Brazuca'. The Jabulani was used in 2010."
+  },
+  {
+    "id": 17,
+    "type": "multiple-choice",
+    "difficulty": "Hard",
+    "question": "Who is the only manager to win two FIFA World Cups?",
+    "options": ["Vicente del Bosque", "Mario Zagallo", "Vittorio Pozzo", "Didier Deschamps"],
+    "correctAnswer": "Vittorio Pozzo",
+    "fact": "Pozzo coached Italy to victory in 1934 and 1938."
+  },
+  {
+    "id": 18,
+    "type": "matching",
+    "difficulty": "Easy",
+    "question": "Match the country to its total World Cup wins (as of 2022):",
+    "pairs": [
+      {"item": "Brazil", "match": "5"},
+      {"item": "Italy", "match": "4"},
+      {"item": "Argentina", "match": "3"},
+      {"item": "France", "match": "2"}
+    ],
+    "fact": "Brazil's last title came in 2002."
+  },
+  {
+    "id": 19,
+    "type": "multiple-choice",
+    "difficulty": "Medium",
+    "question": "Which African nation was the first to reach a World Cup quarter-final?",
+    "options": ["Nigeria", "Senegal", "Cameroon", "Ghana"],
+    "correctAnswer": "Cameroon",
+    "fact": "Cameroon broke the barrier in 1990 led by 38-year-old Roger Milla."
+  },
+  {
+    "id": 20,
+    "type": "true-false",
+    "difficulty": "Hard",
+    "question": "Pelé is the only player to have won three FIFA World Cups.",
+    "correctAnswer": true,
+    "fact": "He won in 1958, 1962, and 1970."
+  }
+]

@@ -40,23 +40,48 @@
             border-bottom: 1px solid var(--glass-border);
         }
 
-        .nav-links { list-style: none; display: flex; gap: 30px; }
-        .nav-links a { text-decoration: none; color: white; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
         .nav-links a:hover { color: var(--accent-purple); }
 
-        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-        header { padding: 100px 0 60px 0; text-align: center; }
+        header {
+            padding: 100px 0 60px 0;
+            text-align: center;
+        }
 
         h1 {
             font-size: 3.5rem;
             margin: 0;
+            letter-spacing: -1px;
             background: linear-gradient(to right, #fff, var(--accent-purple));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
-        .subtitle { font-size: 1.2rem; color: var(--text-silver); margin-top: 10px; font-weight: 300; }
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-silver);
+            margin-top: 10px;
+            font-weight: 300;
+        }
 
         .section-title {
             font-size: 1.8rem;
@@ -72,24 +97,27 @@
             border-radius: 20px;
             margin-bottom: 25px;
             backdrop-filter: blur(5px);
+            transition: transform 0.3s ease;
         }
 
-        /* App Window Styling */
-        .app-window {
-            width: 100%;
-            height: 600px;
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            overflow: hidden;
-            background: #000;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        .card:hover { transform: translateY(-5px); }
+
+        .title-sm {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: var(--accent-purple);
+            display: block;
+            margin-bottom: 10px;
         }
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        .bullets {
+            padding-left: 20px;
+            color: var(--text-silver);
         }
+
+        .bullets li { margin-bottom: 12px; }
 
         .tag {
             display: inline-block;
@@ -99,17 +127,40 @@
             border-radius: 50px;
             font-size: 0.75rem;
             margin-right: 8px;
+            margin-bottom: 8px;
             border: 1px solid rgba(157, 80, 187, 0.3);
         }
 
-        .title-sm {
-            font-weight: 800;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            color: var(--accent-purple);
-            display: block;
-            margin-bottom: 10px;
+        .app-window {
+            width: 100%;
+            height: 600px;
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            background: #000;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            margin-top: 20px;
         }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--accent-purple);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .cta-btn:hover { opacity: 0.9; }
 
         footer { text-align: center; padding: 50px; opacity: 0.5; font-size: 0.8rem; }
 
@@ -121,8 +172,8 @@
         <div style="font-weight: 800; font-size: 1.2rem;">NC</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#app">World Cup App</a></li>
+            <li><a href="#professional">Experience</a></li>
+            <li><a href="#projects">Projects</a></li> 
             <li><a href="#personal">Interests</a></li>
         </ul>
     </nav>
@@ -130,54 +181,99 @@
     <div class="container">
         <header>
             <h1>Nicholas Cocozza</h1>
-            <p class="subtitle">Aspiring CPA | Auditor | Rutgers Business School [cite: 6, 7]</p>
+            <p class="subtitle">Aspiring CPA | Auditor | Rutgers University Alumni [cite: 7, 18]</p>
         </header>
 
         <section id="about">
             <h2 class="section-title">Professional Summary</h2>
             <div class="card">
-                <p>Dedicated accounting professional and Rutgers University graduate with a focus on Audit and Financial Reporting[cite: 7]. Preparing for the CPA examination, I combine a rigorous academic foundation in Advanced Accounting and Concepts of Auditing with a detail-oriented mindset[cite: 10, 11].</p>
+                <p>Dedicated accounting professional and Rutgers University graduate with a focus on Audit and Financial Reporting[cite: 7, 18]. Preparing for the CPA examination, I combine a rigorous academic foundation with a detail-oriented mindset to deliver high-quality financial insights. Committed to integrity, continuous learning, and contributing to the evolution of the accounting profession.</p>
             </div>
         </section>
 
-        <section id="app">
-            <h2 class="section-title">Interactive Project: World Cup Trivia</h2>
-            <div class="card" style="padding: 15px;">
-                <p style="margin-bottom: 20px; font-size: 0.9rem; color: var(--text-silver);">
-                    I developed this custom JavaScript application to demonstrate my ability to handle structured data (JSON) and logic—skills that translate directly to data-driven auditing[cite: 44]. 
-                    <strong>Play the game directly below:</strong>
-                </p>
-                <div class="app-window">
-                    <iframe src="Assets/World Cup App/index.html" title="World Cup Trivia App"></iframe>
+        <section id="professional">
+            <h2 class="section-title">Professional Development</h2>
+            <div class="card">
+                <span class="title-sm">Education</span>
+                <p><strong>Rutgers University – New Brunswick</strong> [cite: 5, 21]<br>Bachelor of Science in Accounting [cite: 7]</p>
+                <div class="tags">
+                    <span class="tag">Auditing</span> [cite: 11]
+                    <span class="tag">Financial Accounting</span>
+                    <span class="tag">Cost Accounting</span> [cite: 12]
+                    <span class="tag">Taxation</span>
                 </div>
             </div>
         </section>
 
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
+        <section id="projects">
+            <h2 class="section-title">Technical Projects</h2>
             <div class="card">
-                <span class="title-sm">Audit Internship | Forvis Mazars, LLP [cite: 17]</span>
-                <p>Collaborated on EBP audits and performed financial statement tie-outs[cite: 19, 20].</p>
-                <div class="tags">
-                    <span class="tag">Alteryx</span>
-                    <span class="tag">Tableau</span>
-                    <span class="tag">GAAP</span>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <span class="title-sm">World Cup Trivia App</span>
+                        <p style="font-size: 0.95rem; color: var(--text-silver);">
+                            Developed a custom web application featuring dynamic logic to test users on football history. 
+                            This project showcases my ability to handle structured data (JSON), manage application states, and design user-centric interfaces.
+                        </p>
+                        <div class="tags" style="margin: 15px 0;">
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">JSON Modeling</span>
+                            <span class="tag">CSS3 Animations</span>
+                            <span class="tag">GitHub Pages</span>
+                        </div>
+                    </div>
+                    <div style="width: 120px; text-align: center; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; border: 1px dashed var(--glass-border);">
+                        <span style="font-size: 2.5rem;">⚽</span>
+                        <p style="font-size: 0.7rem; margin-top: 5px; opacity: 0.6;">Samba Trivia</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="personal">
-            <h2 class="section-title">Interests & Milestones</h2>
+            <h2 class="section-title">Beyond the Ledger</h2>
             <div class="card">
-                <p><strong>Favorite Teams:</strong> FC Barcelona, NY Giants, and Rutgers Football.</p>
-                <p><strong>Fun Fact:</strong> Performed in the 2023 Macy’s Thanksgiving Day Parade and represented Rutgers in London[cite: 15].</p>
+                <span class="title-sm">Personal Interests</span>
+                <p>When I'm not studying for the CPA or analyzing data, I am passionate about sports, music, and my community.</p>
+                <p style="font-size: 0.95rem; margin-top: 10px;"><strong>Favorite Teams:</strong></p>
+                <div class="tags">
+                    <span class="tag">FC Barcelona</span>
+                    <span class="tag">New York Giants</span>
+                    <span class="tag">Rutgers Football</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="title-sm">Interactive Experience</span>
+                <p style="font-size: 0.95rem; color: var(--text-silver);">
+                    As a demonstration of my technical versatility, I created this interactive trivia application. It reflects my ability to organize complex information and build logical workflows—essential traits for a modern auditor.
+                </p>
+                <div class="app-window">
+                    <iframe src="Assets/World Cup App/index.html" title="World Cup Trivia App"></iframe>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="title-sm">Notable Milestones</span>
+                <ul class="bullets">
+                    <li><strong>Macy’s Thanksgiving Day Parade (2023):</strong> Proud participant with the Rutgers University Marching Band[cite: 15].</li>
+                    <li><strong>London Band Week:</strong> Represented Rutgers University internationally in London with the marching band[cite: 15].</li>
+                    <li><strong>Rutgers University Accounting Association:</strong> Active member engaging with the future of the profession[cite: 14].</li>
+                </ul>
             </div>
         </section>
 
-        <footer>
-            &copy; 2024 Nicholas Cocozza. Built with passion and precision.
-        </footer>
+        <div style="text-align: center; padding: 60px 0;">
+            <h3>Looking for a dedicated Audit professional?</h3>
+            <p style="opacity: 0.7;">Let's connect on LinkedIn or via email[cite: 3].</p>
+            <a href="mailto:nicholas.cocozza123@gmail.com" class="cta-btn">Contact Me</a>
+        </div>
+
     </div>
+
+    <footer>
+        &copy; 2024 Nicholas Cocozza. Built with passion and precision.
+    </footer>
 
 </body>
 </html>

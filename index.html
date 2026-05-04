@@ -13,7 +13,6 @@
             --glass: rgba(255, 255, 255, 0.05);
             --glass-border: rgba(255, 255, 255, 0.1);
             --text-silver: #cfcfcf;
-            --brazil-gold: #FFD700;
         }
 
         html { scroll-behavior: smooth; }
@@ -64,19 +63,8 @@
         }
 
         header {
-            padding: 80px 0 60px 0;
+            padding: 100px 0 60px 0;
             text-align: center;
-        }
-
-        /* Profile Image Styling */
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid var(--accent-purple);
-            object-fit: cover;
-            margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(157, 80, 187, 0.3);
         }
 
         h1 {
@@ -109,23 +97,38 @@
             border-radius: 20px;
             margin-bottom: 25px;
             backdrop-filter: blur(5px);
+            transition: transform 0.3s ease;
         }
 
-        /* Embedded App Styling */
-        .game-frame-container {
-            width: 100%;
-            height: 600px;
-            border-radius: 20px;
-            overflow: hidden;
-            border: 2px solid var(--glass-border);
-            background: #fff; /* Match trivia background */
-            margin-top: 20px;
+        .card:hover { transform: translateY(-5px); }
+
+        .title-sm {
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: var(--accent-purple);
+            display: block;
+            margin-bottom: 10px;
         }
 
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        .bullets {
+            padding-left: 20px;
+            color: var(--text-silver);
+        }
+
+        .bullets li { margin-bottom: 12px; }
+
+        .tag {
+            display: inline-block;
+            background: rgba(157, 80, 187, 0.15);
+            color: #d199ff;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            border: 1px solid rgba(157, 80, 187, 0.3);
         }
 
         .cta-btn {
@@ -137,23 +140,13 @@
             border-radius: 50px;
             font-weight: 600;
             margin-top: 20px;
-            transition: all 0.3s;
+            transition: opacity 0.3s;
         }
 
-        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(157, 80, 187, 0.4); }
-
-        .tag {
-            display: inline-block;
-            background: rgba(157, 80, 187, 0.15);
-            color: #d199ff;
-            padding: 4px 12px;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            margin-right: 8px;
-            border: 1px solid rgba(157, 80, 187, 0.3);
-        }
+        .cta-btn:hover { opacity: 0.9; }
 
         footer { text-align: center; padding: 50px; opacity: 0.5; font-size: 0.8rem; }
+
     </style>
 </head>
 <body>
@@ -163,36 +156,59 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#professional">Experience</a></li>
-            <li><a href="#personal">Interests</a></li>
-            <li><a href="#trivia">Trivia Showcase</a></li>
+            <li><a href="#projects">Projects</a></li> <li><a href="#personal">Interests</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <header>
-            <img src="Assets/profile.jpg" alt="Nicholas Cocozza" class="profile-img">
             <h1>Nicholas Cocozza</h1>
             <p class="subtitle">Aspiring CPA | Auditor | Rutgers University Alumni</p>
-            
-            <a href="Assets/Resume.pdf" class="cta-btn" target="_blank">Download Resume</a>
         </header>
 
         <section id="about">
             <h2 class="section-title">Professional Summary</h2>
             <div class="card">
-                <p>Dedicated accounting professional and Rutgers University graduate with a focus on Audit and Financial Reporting. Preparing for the CPA examination, I combine a rigorous academic foundation with a detail-oriented mindset.</p>
+                <p>Dedicated accounting professional and Rutgers University graduate with a focus on Audit and Financial Reporting. Preparing for the CPA examination, I combine a rigorous academic foundation with a detail-oriented mindset to deliver high-quality financial insights. Committed to integrity, continuous learning, and contributing to the evolution of the accounting profession.</p>
             </div>
         </section>
 
         <section id="professional">
             <h2 class="section-title">Professional Development</h2>
             <div class="card">
-                <span class="title-sm" style="color:var(--accent-purple); font-weight:800; text-transform:uppercase; letter-spacing:1px;">Education</span>
+                <span class="title-sm">Education</span>
                 <p><strong>Rutgers University – New Brunswick</strong><br>Bachelor of Science in Accounting</p>
-                <div class="tags" style="margin-top:10px;">
+                <div class="tags">
                     <span class="tag">Auditing</span>
+                    <span class="tag">Financial Accounting</span>
+                    <span class="tag">Cost Accounting</span>
                     <span class="tag">Taxation</span>
-                    <span class="tag">Data Analysis</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Technical Projects</h2>
+            <div class="card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <span class="title-sm">World Cup Trivia App</span>
+                        <p style="font-size: 0.95rem; color: var(--text-silver);">
+                            Developed a custom web application featuring dynamic logic to test users on football history. 
+                            This project showcases my ability to handle structured data (JSON), manage application states, and design user-centric interfaces.
+                        </p>
+                        <div class="tags" style="margin: 15px 0;">
+                            <span class="tag">JavaScript (ES6+)</span>
+                            <span class="tag">JSON Modeling</span>
+                            <span class="tag">CSS3 Animations</span>
+                            <span class="tag">GitHub Pages</span>
+                        </div>
+                        <a href="Assets/World Cup App/index.html" class="cta-btn" style="margin-top: 10px;">Play Trivia Game</a>
+                    </div>
+                    <div style="width: 120px; text-align: center; background: rgba(255,255,255,0.03); padding: 15px; border-radius: 15px; border: 1px dashed var(--glass-border);">
+                        <span style="font-size: 2.5rem;">⚽</span>
+                        <p style="font-size: 0.7rem; margin-top: 5px; opacity: 0.6;">Samba Trivia</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -200,33 +216,36 @@
         <section id="personal">
             <h2 class="section-title">Beyond the Ledger</h2>
             <div class="card">
-                <p>Passionate about the Rutgers Marching Band, FC Barcelona, and local community engagement.</p>
-            </div>
-        </section>
-
-        <section id="trivia">
-            <h2 class="section-title">Technical Project: World Cup Trivia</h2>
-            <div class="card">
-                <p style="margin-bottom: 15px; color: var(--text-silver);">I developed this application to demonstrate data logic and UI responsiveness. Play it directly below:</p>
-                
-                <div class="game-frame-container">
-                    <iframe src="World Cup App/index.html" title="World Cup Trivia Game"></iframe>
+                <span class="title-sm">Personal Interests</span>
+                <p>When I'm not studying for the CPA or analyzing data, I am passionate about sports, music, and my community.</p>
+                <p style="font-size: 0.95rem; margin-top: 10px;"><strong>Favorite Teams:</strong></p>
+                <div class="tags">
+                    <span class="tag">FC Barcelona</span>
+                    <span class="tag">New York Giants</span>
+                    <span class="tag">Rutgers Football</span>
                 </div>
-                
-                <p style="font-size: 0.8rem; margin-top: 15px; color: var(--brazil-gold); text-align: center;">
-                    Built with JavaScript, JSON, and CSS3 Animations.
-                </p>
+            </div>
+
+            <div class="card">
+                <span class="title-sm">Notable Milestones</span>
+                <ul class="bullets">
+                    <li><strong>Macy’s Thanksgiving Day Parade (2023):</strong> Proud participant with the Rutgers University Marching Band.</li>
+                    <li><strong>London Band Week:</strong> Represented Rutgers University internationally in London with the marching band.</li>
+                    <li><strong>Rutgers University Accounting Association:</strong> Active member engaging with the future of the profession.</li>
+                </ul>
             </div>
         </section>
 
-        <div style="text-align: center; padding: 40px 0;">
-            <h3>Ready to connect?</h3>
+        <div style="text-align: center; padding: 60px 0;">
+            <h3>Looking for a dedicated Audit professional?</h3>
+            <p style="opacity: 0.7;">Let's connect on LinkedIn or via email.</p>
             <a href="mailto:nicholas.cocozza123@gmail.com" class="cta-btn">Contact Me</a>
         </div>
+
     </div>
 
     <footer>
-        &copy; 2024 Nicholas Cocozza. Built with precision and passion.
+        &copy; 2024 Nicholas Cocozza. Built with passion and precision.
     </footer>
 
 </body>

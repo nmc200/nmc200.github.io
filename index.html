@@ -47,7 +47,6 @@
 
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
 
-        /* Hero Section */
         .hero {
             display: flex;
             align-items: center;
@@ -72,7 +71,6 @@
         .accent { color: var(--accent-purple); }
         .hero-text p { font-size: 1.2rem; color: var(--text-silver); margin: 10px 0; }
 
-        /* Experience & Info Cards */
         .section-title {
             font-size: 1.8rem;
             margin: 50px 0 25px;
@@ -105,7 +103,6 @@
         .bullets { padding-left: 20px; color: var(--text-silver); font-size: 0.95rem; }
         .bullets li { margin-bottom: 8px; }
 
-        /* Interest Tags */
         .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
         .tag {
             background: rgba(157, 80, 187, 0.1);
@@ -113,6 +110,23 @@
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 0.8rem;
+        }
+
+        /* App Integration Styling */
+        .app-window {
+            width: 100%;
+            height: 550px;
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            overflow: hidden;
+            background: #000;
+            margin-top: 15px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
         .cta-btn {
@@ -127,23 +141,6 @@
             transition: 0.3s;
         }
         .cta-btn:hover { box-shadow: 0 0 20px rgba(157, 80, 187, 0.5); }
-
-        /* App Window Styling */
-        .app-window {
-            width: 100%;
-            height: 600px;
-            border: 1px solid var(--glass-border);
-            border-radius: 15px;
-            overflow: hidden;
-            background: #000;
-            margin-top: 15px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
 
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
@@ -174,12 +171,12 @@
             </div>
             <div class="hero-text">
                 <h1>Nicholas <span class="accent">Cocozza</span></h1>
-                <p>Senior @ Rutgers Business School</p>
-                <p style="font-size: 1rem; opacity: 0.7;">Aspiring CPA | Accounting Major | Rutgers Class of 2026</p>
+                <p>Senior @ Rutgers Business School [cite: 5, 6]</p>
+                <p style="font-size: 1rem; opacity: 0.7;">Aspiring CPA | Accounting Major | Rutgers Class of 2026 [cite: 7, 22]</p>
                 
                 <div class="card" style="margin-top: 20px; padding: 15px;">
                     <span class="title-sm">The Goal</span>
-                    <p style="font-size: 0.9rem; margin: 0;">I am a dedicated senior at Rutgers Business School with a passion for financial integrity. My career focus is in <strong>Auditing</strong>, and I am currently working toward my 150-credit requirement to become a <strong>Certified Public Accountant (CPA)</strong>.</p>
+                    <p style="font-size: 0.9rem; margin: 0;">I am a dedicated senior at Rutgers Business School [cite: 5, 6] with a passion for financial integrity. My career focus is in <strong>Auditing</strong>, and I am currently working toward my 150-credit requirement to become a <strong>Certified Public Accountant (CPA)</strong>.</p>
                 </div>
             </div>
         </section>
@@ -187,23 +184,12 @@
         <h2 id="professional" class="section-title">Audit & Accounting Experience</h2>
         
         <div class="card">
-            <span class="title-sm">Audit Internship | Forvis Mazars, LLP</span>
+            <span class="title-sm">Audit Internship | Forvis Mazars, LLP [cite: 17, 18]</span>
             <ul class="bullets">
-                <li>Collaborated on EBP (Employee Benefit Plan) audits.</li>
-                <li>Performed detailed testing and tied out financial statements.</li>
-                <li>Gained hands-on experience with client engagement and GAAP compliance.</li>
+                <li>Collaborated on EBP (Employee Benefit Plan) audits[cite: 19].</li>
+                <li>Performed detailed testing and tied out financial statements[cite: 19, 20].</li>
+                <li>Gained hands-on experience with client engagement and GAAP compliance[cite: 20, 45].</li>
             </ul>
-        </div>
-
-        <div class="card">
-            <span class="title-sm">Technical Proficiency</span>
-            <div class="tags">
-                <span class="tag">Alteryx</span>
-                <span class="tag">Tableau</span>
-                <span class="tag">Microsoft Excel</span>
-                <span class="tag">GAAP</span>
-                <span class="tag">Audit Testing</span>
-            </div>
         </div>
 
         <h2 id="fun-facts" class="section-title">Personal Interests & Fun Facts</h2>
@@ -211,7 +197,6 @@
         <div class="card">
             <span class="title-sm">Outside the Audit Room</span>
             <p style="font-size: 0.95rem;">When I'm not studying for the CPA, you can find me on the slopes <strong>skiing</strong> during the winter. I am a huge sports fan, especially when it comes to <strong>soccer and football</strong>.</p>
-            <p style="font-size: 0.95rem; margin-top: 10px;"><strong>Favorite Teams:</strong></p>
             <div class="tags">
                 <span class="tag">FC Barcelona</span>
                 <span class="tag">New York Giants</span>
@@ -221,7 +206,7 @@
 
         <div class="card">
             <span class="title-sm">Interactive Project: World Cup Trivia App</span>
-            <p style="font-size: 0.9rem; color: var(--text-silver); margin-bottom: 10px;">I developed this interactive application to showcase technical versatility and logic. Play the game directly below:</p>
+            <p style="font-size: 0.9rem; color: var(--text-silver);">I developed this application to showcase technical versatility and logic. Play the game directly below:</p>
             <div class="app-window">
                 <iframe src="Assets/World Cup App/index.html" title="World Cup Trivia App"></iframe>
             </div>
@@ -230,9 +215,9 @@
         <div class="card">
             <span class="title-sm">Notable Milestones</span>
             <ul class="bullets">
-                <li><strong>Macy’s Thanksgiving Day Parade (2023):</strong> Proud participant with the Rutgers University Marching Band.</li>
-                <li><strong>London Band Week:</strong> Represented Rutgers University internationally in London with the marching band.</li>
-                <li><strong>Rutgers University Accounting Association:</strong> Active member engaging with the future of the profession.</li>
+                <li><strong>Macy’s Thanksgiving Day Parade (2023):</strong> Proud participant with the Rutgers University Marching Band[cite: 15].</li>
+                <li><strong>London Band Week:</strong> Represented Rutgers University internationally in London with the marching band[cite: 15].</li>
+                <li><strong>Rutgers University Accounting Association:</strong> Active member engaging with the future of the profession[cite: 14].</li>
             </ul>
         </div>
 
